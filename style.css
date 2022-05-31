@@ -82,6 +82,7 @@
     grid-template-rows: 1.6fr 0.4fr;
     padding-bottom: 10px;
     grid-gap: 10px;
+    position: relative;
 }
 
 .summary{
@@ -106,18 +107,34 @@
 
 .increase{
     color: black;
+    text-align: right;
 }
 
 .bar{
     background-color: #eb755d;
     width: 70%;
     margin: 0 auto 0 auto;
-    height: 60%;
     place-self: end;
     border-radius: 5px;
+    cursor: pointer;
 }
+
+.bar:hover{
+    filter: brightness(1.4);
+}
+
 
 .color{
     background-color: darkcyan;
 }
 
+.show{
+    height: 15px;
+    width: 35px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    top: 30px;
+}
