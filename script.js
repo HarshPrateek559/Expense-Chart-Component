@@ -18,6 +18,9 @@ Array.from(bars).forEach((e) => {
     let text = document.createTextNode(`$${data[e.id - 1]}`);
     div.appendChild(text);
     graph[e.id - 1].appendChild(div);
+    div.style.position = 'absolute';
+    div.style.top =  `0px`
+    
   });
   e.addEventListener("mouseout", () => {
     let rem = document.querySelector(".show");
